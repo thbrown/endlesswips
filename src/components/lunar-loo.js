@@ -11,40 +11,34 @@ export default class LunarLooEntry extends React.Component {
       <div className="card mb-3">
         <div className="card-body">
           <div className="mb-3">
-            <h5 className="text-bold text-capfirst">title</h5>
-            <div className="entry">Electrostatic Throne</div>
-          </div>
-          <img
-            className="img-fluid"
-            src="https://d253pvgap36xx8.cloudfront.net/challenges/submissions/image/4662a140dffe11eaa39aaec671a4313d.jpg"
-          ></img>
-          <div className="mb-3">
-            <h5 className="text-bold text-capfirst">short description</h5>
-            <div className="entry">
-              Attract waste with electrostatic force; use centripetal force to
-              keep it there.
-            </div>
-          </div>
-
-          <div className="mb-3">
-            <h5 className="text-bold">
-              Please provide an overview of your proposed design concept for a
-              lunar toilet.
-            </h5>
             <div className="entry">
               <div>
                 <div className="editor-content">
                   <h1>The Electrostatic Throne</h1>
+                  <div className="mb-3">
+                    <div className="entry">
+                      <i>
+                        Attract waste with electrostatic force; use centripetal
+                        force to keep it there.
+                      </i>
+                    </div>
+                    <br></br>
+                  </div>
+                  <img
+                    alt=""
+                    className="img-fluid center"
+                    src="https://d253pvgap36xx8.cloudfront.net/challenges/submissions/image/4662a140dffe11eaa39aaec671a4313d.jpg"
+                  ></img>
+
                   <h2>Overview</h2>
                   <p>
                     The design utilizes electrostatic attraction and centripetal
-                    force to attract and hold waste.&nbsp;
+                    force to attract and hold waste.
                   </p>
                   <p>
                     Both male and female crew members will use the toilet in the
                     same way they use a traditional western earth-bound toilet
-                    (sitting-only for males). This results in intuitive
-                    use.&nbsp;
+                    (sitting-only for males). This results in intuitive use.
                   </p>
                   <p>
                     The waste is collected in a removable bag that closes
@@ -61,6 +55,7 @@ export default class LunarLooEntry extends React.Component {
                   <figure className="image">
                     <img
                       alt="Three parts of the toilet base, can, and lid"
+                      className="center"
                       src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/07/10/assembly_.jpg"
                     ></img>
                     <figcaption>
@@ -69,7 +64,7 @@ export default class LunarLooEntry extends React.Component {
                     </figcaption>
                   </figure>
                   <h2>Usage procedure</h2>
-                  <p>A typical use of the toilet is described below.&nbsp;</p>
+                  <p>A typical use of the toilet is described below. </p>
                   <h3>Using the toilet</h3>
                   <p>To use the toilet, a crew member:</p>
                   <ol>
@@ -84,18 +79,14 @@ export default class LunarLooEntry extends React.Component {
                     <li>Fastens themselves to the toilet with belt.</li>
                     <li>Powers on the toilet.</li>
                     <li>
-                      Expels waste.
-                      <ol>
-                        <li>
-                          Optionally uses hygiene products contained in stowage
-                          compartments.
-                        </li>
-                      </ol>
+                      Expels waste. Optionally uses hygiene products contained
+                      in stowage compartments.
                     </li>
                   </ol>
                   <figure className="image">
                     <img
-                      alt="Crew member using the toilet"
+                      className="center"
+                      alt=""
                       src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/01/UsageAnnotated.jpg"
                     ></img>
                     <figcaption>Crew member using the toilet</figcaption>
@@ -104,39 +95,30 @@ export default class LunarLooEntry extends React.Component {
                   <p>After expelling waste, a crew member:</p>
                   <ol>
                     <li>
-                      Powers off the toilet.
-                      <ol>
-                        <li>
-                          Friction slows spinning, and spring-loaded arms seal
-                          waste bag.
-                        </li>
-                      </ol>
+                      Powers off the toilet. Friction slows spinning, and
+                      spring-loaded arms seal waste bag.
                     </li>
                     <li>Opens the hatch on the side of the device.</li>
                     <li>Removes the can and the attached lid.</li>
                     <li>Removes the lid from the can.</li>
                     <li>Ties the bag.</li>
                     <li>
-                      Pulls back and latches the arms.
-                      <ol>
-                        <li>
-                          Arms are mechanically bound, so pulling back one arm
-                          also moves the three other arms.
-                        </li>
-                      </ol>
+                      Pulls back and latches the arms. Arms are mechanically
+                      bound, so pulling back one arm also moves the three other
+                      arms.
                     </li>
                     <li>
                       Removes the bag from the can and places into storage.
-                      <ol>
-                        <li>
-                          Waste could be stored for medical or scientific
-                          evaluation or reuse, or ejected.
-                        </li>
-                      </ol>
+                      Waste could be stored for medical or scientific evaluation
+                      or reuse, or ejected.
                     </li>
                   </ol>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/01/CleanupAnnotated.jpg"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/01/CleanupAnnotated.jpg"
+                    ></img>
                     <figcaption>Cleanup</figcaption>
                   </figure>
                   <h2>Preparation for next use</h2>
@@ -153,22 +135,25 @@ export default class LunarLooEntry extends React.Component {
                     <li>Cleans the seat belt (if necessary).</li>
                     <li>
                       Stores the belt in the compartment at the base of the
-                      toilet.
-                      <ol>
-                        <li>
-                          When the compartment doors are closed, the belts are
-                          sanitized with UV light.
-                        </li>
-                      </ol>
+                      toilet. When the compartment doors are closed, the belts
+                      are sanitized with UV light.
                     </li>
                   </ol>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/01/SetupAnnotated.jpg"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/01/SetupAnnotated.jpg"
+                    ></img>
                     <figcaption>Toilet preparation</figcaption>
                   </figure>
                   <h3>Diagram</h3>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/15/image___.jpg"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/15/image___.jpg"
+                    ></img>
                     <figcaption>
                       Detailed view of the underside of the toilet (bottom cover
                       hidden)
@@ -203,9 +188,12 @@ export default class LunarLooEntry extends React.Component {
           </div>
 
           <div className="mb-3">
-            <h5 className="text-bold">
-              Please upload an image of your design.
-            </h5>
+            <div className="rant">
+              <h5 className="text-bold">
+                Prompt: Please upload an image of your design.
+              </h5>
+            </div>
+            <br></br>
             <div className="entry">
               <a
                 href="https://d253pvgap36xx8.cloudfront.net/formsbuilder/files/2f3f92dcc0e311eaaacf8a35d83c513f/OpenSide.PNG"
@@ -213,22 +201,27 @@ export default class LunarLooEntry extends React.Component {
                 rel="noreferrer"
               >
                 <img
-                  className="image-field img-fluid"
+                  alt=""
+                  className="image-field img-fluid center"
                   src="https://d253pvgap36xx8.cloudfront.net/formsbuilder/files/2f3f92dcc0e311eaaacf8a35d83c513f/OpenSide.PNG"
                   title="OpenSide.PNG"
                 ></img>
+                <br></br>
               </a>
             </div>
           </div>
 
           <div className="mb-3">
-            <h5 className="text-bold">
-              Please discuss in detail how your design will: (i) work in both
-              microgravity and lunar gravity, (ii) accommodate female and male
-              crew, (iii) be easy to use and maintain, with low noise, low odor,
-              and fast turnaround time, (iv) allow for transfer of collected
-              waste to storage or external vehicle disposal
-            </h5>
+            <div className="rant">
+              <h5 className="text-bold">
+                Prompt: Please discuss in detail how your design will: (i) work
+                in both microgravity and lunar gravity, (ii) accommodate female
+                and male crew, (iii) be easy to use and maintain, with low
+                noise, low odor, and fast turnaround time, (iv) allow for
+                transfer of collected waste to storage or external vehicle
+                disposal
+              </h5>
+            </div>
             <div className="entry">
               <div>
                 <div className="editor-content">
@@ -243,13 +236,13 @@ export default class LunarLooEntry extends React.Component {
                     also become positively charged. The voltage gradient between
                     the bottom of the can and the crew member produces an
                     attractive force that will lure the waste into the bag-lined
-                    can.&nbsp;
+                    can.
                   </p>
                   <p>
                     By design, waste that comes into contact the can will
-                    rapidly begin to lose its positive charge. &nbsp;Like
-                    household trash bags, waste bags in this toilet are made out
-                    of polyethylene. The dielectric strength of low density
+                    rapidly begin to lose its positive charge. Like household
+                    trash bags, waste bags in this toilet are made out of
+                    polyethylene. The dielectric strength of low density
                     polyethylene is{" "}
                     <a
                       rel="nofollow noreferrer"
@@ -282,7 +275,7 @@ export default class LunarLooEntry extends React.Component {
                     </a>
                     which will maintain a small attractive force to charged
                     objects because of its polarity, this force will likely not
-                    be sufficient to hold the waste safely.&nbsp;
+                    be sufficient to hold the waste safely.
                   </p>
                   <p>
                     To secure the waste, the toilet utilizes centripetal force
@@ -294,10 +287,24 @@ export default class LunarLooEntry extends React.Component {
                     closed on the bottom, the shape of the can allows operation
                     in both microgravity and lunar gravity. This shape provides
                     13 liters of waste storage in micro gravity and even more in
-                    lunar gravity. &nbsp;
+                    lunar gravity.
                   </p>
+                  <div className="rant">
+                    <b>Correction: </b>The below graphic is requires a
+                    correction. Centripetal force is an inward directed force,
+                    so the purple arrows are in the wrong direction.
+                    Alternatively I could have specified centrifugal force,
+                    which is an apparent force in the outward direction. The
+                    operation principle is the same because both of these terms
+                    refer to same force in different reference frames. I made
+                    this error in one of the other images below as well.
+                  </div>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/07/31/ToiletDesign_.png"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/07/31/ToiletDesign_.png"
+                    ></img>
                     <figcaption>
                       Cross section of can operation in different gravitational
                       environments
@@ -316,12 +323,12 @@ export default class LunarLooEntry extends React.Component {
                     or vomit particle size and composition. Menses have a
                     similar enough particle size and composition to urine,
                     feces, and diarrhea, so because the toilet can capture these
-                    waste types, it can also capture&nbsp;menses.
+                    waste types, it can also capture menses.
                   </p>
                   <h1>Easy to use and maintain</h1>
                   <p>
                     A traditional western toilet is familiar to crew members and
-                    therefore will be easy to use.&nbsp;
+                    therefore will be easy to use.
                   </p>
                   <p>
                     The toilet has relatively few components, so it is unlikely
@@ -333,7 +340,7 @@ export default class LunarLooEntry extends React.Component {
                     results in major noise reduction. Since the toilet doesn't
                     need to drive a fan, the motors that produce the centripetal
                     force and that engage the Van der Graaf generator turn at
-                    much lower RPM (rotations per minute), reducing noise.&nbsp;
+                    much lower RPM (rotations per minute), reducing noise.
                   </p>
                   <p>
                     Though I was unable to find an exact statistic for the noise
@@ -355,9 +362,9 @@ export default class LunarLooEntry extends React.Component {
                     Waste bags are changed after each use. Since, with normal
                     use, the bag is the only part of the toilet that comes into
                     contact with waste, odor between uses should be very small.
-                    &nbsp;In case of accidents (bag tears, spray) the parts of
-                    the toilet most at risk from being soiled - the can and the
-                    lid - can be detached from the toilet for cleaning.
+                    In case of accidents (bag tears, spray) the parts of the
+                    toilet most at risk from being soiled - the can and the lid
+                    - can be detached from the toilet for cleaning.
                   </p>
                   <p>
                     Electrostatic force has an outsized effect on smaller
@@ -388,16 +395,18 @@ export default class LunarLooEntry extends React.Component {
           </div>
 
           <div className="mb-3">
-            <h5 className="text-bold">
-              Please discuss in detail how your design will: (i) capture and
-              contain urine, feces, vomit, diarrhea, and menses, (ii) Stabilize
-              urine, (iii) accommodate simultaneous urination and defecation,
-              (iv) accommodate the needs of 2 crew members for 14 days, (v)
-              accommodates the use of toilet hygiene products, (vi) clears
-              previous waste content prior to next use, (vii) defines how often
-              the collections system must be replaced or disposed of in the
-              mission
-            </h5>
+            <div className="rant">
+              <h5 className="text-bold">
+                Prompt: Please discuss in detail how your design will: (i)
+                capture and contain urine, feces, vomit, diarrhea, and menses,
+                (ii) Stabilize urine, (iii) accommodate simultaneous urination
+                and defecation, (iv) accommodate the needs of 2 crew members for
+                14 days, (v) accommodates the use of toilet hygiene products,
+                (vi) clears previous waste content prior to next use, (vii)
+                defines how often the collections system must be replaced or
+                disposed of in the mission
+              </h5>
+            </div>
             <div className="entry">
               <div>
                 <div className="editor-content">
@@ -431,8 +440,8 @@ export default class LunarLooEntry extends React.Component {
                   </p>
                   <blockquote>
                     <p>
-                      (ε<sub>0</sub>AV<sup>2 </sup>/ 2d<sup>2 </sup>)&nbsp;
-                      <sup> </sup>(1 + 2d/ D)&nbsp;
+                      (ε<sub>0</sub>AV<sup>2 </sup>/ 2d<sup>2 </sup>)
+                      <sup> </sup>(1 + 2d/ D)
                     </p>
                     <p>
                       ε<sub>0</sub> - permeability of freespace (8.85 * 10
@@ -447,7 +456,7 @@ export default class LunarLooEntry extends React.Component {
                     <p>
                       <i>
                         Non-constant values are derived from the geometry of the
-                        toilet, except for the voltage.&nbsp;
+                        toilet, except for the voltage.
                       </i>
                     </p>
                     <p>
@@ -460,8 +469,7 @@ export default class LunarLooEntry extends React.Component {
                       </a>
                       <i>
                         {" "}
-                        produce ~350kV. &nbsp;An ad-hoc 125kV Van der Graaf
-                        generator{" "}
+                        produce ~350kV. An ad-hoc 125kV Van der Graaf generator{" "}
                       </i>
                       <a
                         rel="nofollow noreferrer"
@@ -508,12 +516,15 @@ export default class LunarLooEntry extends React.Component {
                   </ol>
                   <p>
                     Because of the principal of superposition, these forces can
-                    be summed to determine the net force acting on the
-                    waste.&nbsp;
+                    be summed to determine the net force acting on the waste.
                   </p>
-                  <p>&nbsp;</p>
+                  <p> </p>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/01/Switched.png"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/01/Switched.png"
+                    ></img>
                     <figcaption>
                       Electrostatic forces acting on waste
                     </figcaption>
@@ -522,8 +533,7 @@ export default class LunarLooEntry extends React.Component {
                     Peak force is applied at the two most important moments:
                     right after waste leaves the crew member (so it moves in the
                     correct direction) and right before it makes contact with
-                    the can (to ensure good contact with the can's
-                    bottom).&nbsp;
+                    the can (to ensure good contact with the can's bottom).
                   </p>
                   <p>
                     Using Coulomb's law, the equation for{" "}
@@ -562,11 +572,12 @@ export default class LunarLooEntry extends React.Component {
                     waste particles.
                   </p>
                   <iframe
+                    title="Html calculator for electrostatic force on waste"
                     frameborder="0"
                     height="500px"
                     scrolling="no"
                     src="https://thbrown.github.io/lunar-iframe/"
-                    width="400px"
+                    width="100%"
                   >
                      
                   </iframe>
@@ -596,8 +607,7 @@ export default class LunarLooEntry extends React.Component {
                     Once waste comes into contact with the can's bottom,
                     friction causes the waste particles to move in the same
                     direction as the spinning can. This imparts a centripetal
-                    force on the waste and traps it on the outside of the
-                    can.&nbsp;
+                    force on the waste and traps it on the outside of the can.
                   </p>
                   <p>
                     Splashback is a concern, but it is mitigated by two factors:
@@ -631,7 +641,11 @@ export default class LunarLooEntry extends React.Component {
                     </li>
                   </ol>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/03/CanTopDown.png"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/03/CanTopDown.png"
+                    ></img>
                     <figcaption>
                       Top-down view of waste coming into contact with the side
                       of the can
@@ -654,15 +668,23 @@ export default class LunarLooEntry extends React.Component {
                     non-urine waste.
                   </p>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/16/image.jpg"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/16/image.jpg"
+                    ></img>
                     <figcaption>Inner can with additional arms</figcaption>
                   </figure>
                   <p style={{ marginLeft: "2rem" }}>
                     2. A toilet seat insert which positions the user properly to
-                    ensure waste ends up in the proper can.<br></br>&nbsp;
+                    ensure waste ends up in the proper can.<br></br>
                   </p>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/16/image_.png"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/16/image_.png"
+                    ></img>
                     <figcaption>
                       Top down view of toilet with separation modifications
                     </figcaption>
@@ -681,7 +703,11 @@ export default class LunarLooEntry extends React.Component {
                     </li>
                   </ol>
                   <figure className="image">
-                    <img src="https://lh6.googleusercontent.com/JGk_jS5OSnJU49yigVsIw_jzEPJ5ONSLhRHl4koW3rNblP0xTynUjANbpitjp-KwJ4-dyeqa969ysEiI2Y9aMHZvDLHcyMPRVJDfReMbM6ckdq8nE1jcgvY-Ua_0LEyXRh4du1Wv"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://lh6.googleusercontent.com/JGk_jS5OSnJU49yigVsIw_jzEPJ5ONSLhRHl4koW3rNblP0xTynUjANbpitjp-KwJ4-dyeqa969ysEiI2Y9aMHZvDLHcyMPRVJDfReMbM6ckdq8nE1jcgvY-Ua_0LEyXRh4du1Wv"
+                    ></img>
                     <figcaption>
                       Modified emptying procedure:<br></br>A) Waste deposited in
                       two separate compartments<br></br>B) Arms close, sealing
@@ -722,12 +748,14 @@ export default class LunarLooEntry extends React.Component {
           </div>
 
           <div className="mb-3">
-            <h5 className="text-bold">
-              Please discuss the safety measures in place to ensure that during
-              nominal use or in the event of a system failure: (i) crew handling
-              of waste materials during maintenance or system use is minimized,
-              (ii) crew members are not exposed to vacuum
-            </h5>
+            <div className="rant">
+              <h5 className="text-bold">
+                Prompt: Please discuss the safety measures in place to ensure
+                that during nominal use or in the event of a system failure: (i)
+                crew handling of waste materials during maintenance or system
+                use is minimized, (ii) crew members are not exposed to vacuum
+              </h5>
+            </div>
             <div className="entry">
               <div>
                 <div className="editor-content">
@@ -745,7 +773,11 @@ export default class LunarLooEntry extends React.Component {
                     do not handle the waste materials.
                   </p>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/07/10/CanOpenAndClosed.jpg"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/07/10/CanOpenAndClosed.jpg"
+                    ></img>
                     <figcaption>
                       Toilet can in the closed configuration (left, not
                       spinning) and open configuration (right, spinning). Bag
@@ -791,7 +823,7 @@ export default class LunarLooEntry extends React.Component {
                     >
                       10 joules
                     </a>
-                    . &nbsp;For reference,{" "}
+                    . For reference,{" "}
                     <a
                       rel="nofollow noreferrer"
                       href="https://www.ilcor.org/data/ILCOR-AED-children.pdf"
@@ -821,11 +853,11 @@ export default class LunarLooEntry extends React.Component {
                       <sup>-12</sup>)(0.785)/(0.28) =
                       <strong>
                         {" "}
-                        24.8*10<sup>-12 &nbsp;</sup>farads
+                        24.8*10<sup>-12 </sup>farads
                       </strong>
                     </p>
                     <p>
-                      Energy (E) = 1/2 * C &nbsp;V<sup>2</sup> = (0.5)( 24.81*10
+                      Energy (E) = 1/2 * C V<sup>2</sup> = (0.5)( 24.81*10
                       <sup>-12</sup>)(160000<sup>2</sup>) <i>=</i>{" "}
                       <strong>0.32 joules</strong>
                     </p>
@@ -854,7 +886,7 @@ export default class LunarLooEntry extends React.Component {
                     there is minimal shock risk from using the toilet. If a
                     person completes the circuit by bridging the terminals with
                     their waste, that person is at increased risk for receiving
-                    a shock.&nbsp;
+                    a shock.
                   </p>
                   <blockquote>
                     <p>
@@ -877,11 +909,11 @@ export default class LunarLooEntry extends React.Component {
                     >
                       common in electrical grounding devices
                     </a>{" "}
-                    to distribute the electrical discharge over time.
-                    &nbsp;After the initial electrical discharge into the
-                    resistor, if the circuit remains closed, the user will still
-                    be subject to continuous current from the generator.
-                    Commercial Van der Graaf generators produce on the order of{" "}
+                    to distribute the electrical discharge over time. After the
+                    initial electrical discharge into the resistor, if the
+                    circuit remains closed, the user will still be subject to
+                    continuous current from the generator. Commercial Van der
+                    Graaf generators produce on the order of{" "}
                     <a
                       rel="nofollow noreferrer"
                       href="https://winsco.com/product/van-de-graaff-generator/"
@@ -924,13 +956,13 @@ export default class LunarLooEntry extends React.Component {
                   <p>
                     The seat belt makes toilet use more convenient for crew
                     members by allowing hands free operation. However, for
-                    faster turnaround times, &nbsp;the same belt is shared
-                    between crew members. &nbsp;To promote cleanliness and limit
-                    bacterial or viral transfer between crew members, belts
-                    stowed in the base of the toilet are bombarded with UV light
-                    between uses. To prevent crew exposure, this bombardment
-                    only occurs for a short period of time after the lower
-                    storage doors are closed.
+                    faster turnaround times, the same belt is shared between
+                    crew members. To promote cleanliness and limit bacterial or
+                    viral transfer between crew members, belts stowed in the
+                    base of the toilet are bombarded with UV light between uses.
+                    To prevent crew exposure, this bombardment only occurs for a
+                    short period of time after the lower storage doors are
+                    closed.
                   </p>
                   <div className="clearfix"></div>
                 </div>
@@ -939,20 +971,22 @@ export default class LunarLooEntry extends React.Component {
           </div>
 
           <div className="mb-3">
-            <h5 className="text-bold">
-              Please discuss the technical maturity of your proposed toilet
-              design. What TRL would you assign it? Please provide a supporting
-              rationale and/or evidence for this rating. Why do you believe this
-              could be developed and integrated into a lunar rover in the next
-              2-3 years?
-            </h5>
+            <div className="rant">
+              <h5 className="text-bold">
+                Prompt: Please discuss the technical maturity of your proposed
+                toilet design. What TRL would you assign it? Please provide a
+                supporting rationale and/or evidence for this rating. Why do you
+                believe this could be developed and integrated into a lunar
+                rover in the next 2-3 years?
+              </h5>
+            </div>
             <div className="entry">
               <div>
                 <div className="editor-content">
                   <p>
                     <strong>
                       The highest TRL that I can justify for this toilet is in
-                      the range of 3-4.&nbsp;
+                      the range of 3-4.
                     </strong>
                   </p>
                   <p>Let's start climbing the ladder:</p>
@@ -998,6 +1032,8 @@ export default class LunarLooEntry extends React.Component {
                   </p>
                   <video-wrapper>
                     <iframe
+                      title="Astronaut demonstrating electrostatic forces between knitting needles and water droplets"
+                      style={{ width: "100%", height: "392px" }}
                       src="//www.youtube.com/embed/qHrBhgwq__Q?rel=0&amp;iv_load_policy=3&amp;wmode=opaque&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.herox.com"
                       frameborder="0"
                       allowfullscreen=""
@@ -1025,6 +1061,8 @@ export default class LunarLooEntry extends React.Component {
                   </p>
                   <video-wrapper>
                     <iframe
+                      title="Astronaut demonstrating centrifugal force acting on a fluid in space"
+                      style={{ width: "100%", height: "392px" }}
                       src="//www.youtube.com/embed/6tXoe7_BB8g?rel=0&amp;iv_load_policy=3&amp;wmode=opaque"
                       frameborder="0"
                       allowfullscreen=""
@@ -1047,7 +1085,11 @@ export default class LunarLooEntry extends React.Component {
                     . This should not be a problem for trained crew members.
                   </p>
                   <figure className="image">
-                    <img src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/16/image.png"></img>
+                    <img
+                      className="center"
+                      alt=""
+                      src="https://d253pvgap36xx8.cloudfront.net/editor_uploads/199835/2020/08/16/image.png"
+                    ></img>
                     <figcaption>Example separation toilet</figcaption>
                   </figure>
                   <p>
@@ -1062,7 +1104,7 @@ export default class LunarLooEntry extends React.Component {
                     the rubric,{" "}
                     <strong>
                       the highest technology level that I can justify for this
-                      toilet is in the range of 3-4.&nbsp;
+                      toilet is in the range of 3-4.
                     </strong>
                   </p>
                   <h3>Other considerations</h3>
@@ -1083,11 +1125,10 @@ export default class LunarLooEntry extends React.Component {
                   </p>
                   <h3>Areas of future focus</h3>
                   <p>
-                    Though there is a rich scientific and
-                    mathematical&nbsp;history of attempting to understand
-                    charges and the forces they produce, it can be difficult to
-                    analytically calculate these forces when the geometry is
-                    complex. The Don Pettit&nbsp;video's
+                    Though there is a rich scientific and mathematical history
+                    of attempting to understand charges and the forces they
+                    produce, it can be difficult to analytically calculate these
+                    forces when the geometry is complex. The Don Pettit video's
                     <a
                       rel="nofollow noreferrer"
                       href="http://www.electrostatics.org/images/ESA_2015_I1_Stevenson.pdf"

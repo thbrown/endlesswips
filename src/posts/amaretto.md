@@ -3,9 +3,9 @@ slug: "/amaretto"
 title: "Let's face it: Most Alcohol Doesn't Taste Good. But Amaretto Does!"
 subtitle: "Impressions of 6 Different Brands"
 firstposted: "2020-10-26"
-lastupdated: "2020-10-26"
+lastupdated: "2021-01-02"
 hidden: false
-titleimage: "https://live.staticflickr.com/65535/50035212902_e930426e6f_o.png"
+titleimage: "https://live.staticflickr.com/65535/50543892813_a5a0950ccc_o.png"
 titleimagetopmargin: -30
 ---
 
@@ -34,17 +34,23 @@ graph TD
   B -->|no| E["Buy the off-brand next time<br> (e.g. eggs, oatmeal)"]
 ```
 
-We dealt for that night, but I was intrigued and excited about what filled the gap between the $7 amaretto and the $30 amarettos. So the next day, I spend about \$100 buying one bottle of every brand of Amaretto I could find. Turns out, based on what I could find, there are really only two major tiers: expensive and cheap. We poured out some tasters into numbered shot glasses and set to work. Here are my impressions:
+We dealt for that night, but I was intrigued and excited about what filled the gap between the $7 amaretto and the $30 amarettos. So the next day, I spend about \$100 buying one bottle of every brand of Amaretto I could find. Based on what I could find, there are roughly three tiers: ~$7, ~$16, ~\$30. We poured out some tasters into numbered shot glasses and set to work.
 
-![Several Brands of Amaretto](https://live.staticflickr.com/65535/50035212902_e930426e6f_o.png)
+![Several Brands of Amaretto](https://live.staticflickr.com/65535/50543892813_a5a0950ccc_o.png)
+
+Here are my impressions:
+
+<div class="table-container">
 
 | Brand     | Price\* | Rank | Tasting Notes                                                                                                                                                                                                                                                                                                                                                                                                                |
 | --------- | ------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Romeo     | \$7.48  | 6th  | Yuck. Tastes like alcohol, in a bad way. It’s even bad when mixed with copious amount of sprite and orange juice. Pass.                                                                                                                                                                                                                                                                                                      |
 | DiAmore   | \$15.98 | 2nd  | Twice as expensive but more than ten times as good. Nothing really fancy to set it apart taste-wise. I think this is a perfect choice for mixed drinks.                                                                                                                                                                                                                                                                      |
-| Disaronno | \$15.98 | 3rd  | Also way better than Romeo (really that’s on a trash tier by itself). A little more distinctive tasting than the DiAmore though. I’ll say darker and smokier. If I were a wine connoisseur, I would say it’s more “woodsy”, whatever that means.                                                                                                                                                                             |
-| Lazzaroni | \$23.98 | 5th  | I don't like this one, but not because it tastes like pure alcohol (thank goodness). I think it tastes, almost like a vegetable. Peppers? Maybe like basil? Supposedly it’s made with amoretti cookies, which I mostly enjoy, but every time I eat those cookies thinking there is something a little off-putting about them. They seem to have distilled whatever that off-putting thing is and made it into this amaretto. |  |
-| Luxardo   | \$24.98 | 4th  | Kinda tastes like red licorice. It’s interesting, it might even be the second best one to drink neat or on the rocks because it has lots to decipher. Overall the red licorice doesn't quite do it for me. I’ll take the Gozio for the same price hands down.                                                                                                                                                                |
-| Gozio     | \$24.98 | 1st  | My favorite, sweet and nutty. I think it also tastes a bit tangy, like green apples. Mmmmm. I’ll just have it neat please, thank you very much.                                                                                                                                                                                                                                                                              |
+| Disaronno | \$29.98 | 3rd  | Also way better than Romeo (really that’s on a trash tier by itself). A little more distinctive tasting than the DiAmore though. I’ll say darker and smokier. If I were a wine connoisseur, I would say it’s more “woodsy”, whatever that means.                                                                                                                                                                             |
+| Lazzaroni | \$24.98 | 5th  | I don't like this one, but not because it tastes like pure alcohol (thank goodness). I think it tastes, almost like a vegetable. Peppers? Maybe like basil? Supposedly it’s made with amoretti cookies, which I mostly enjoy, but every time I eat those cookies thinking there is something a little off-putting about them. They seem to have distilled whatever that off-putting thing is and made it into this amaretto. |  |
+| Luxardo   | \$29.98 | 4th  | Kinda tastes like red licorice. It’s interesting, it might even be the second best one to drink neat or on the rocks because it has lots to decipher. Overall the red licorice doesn't quite do it for me. I’ll take the Gozio for the same price though. down.                                                                                                                                                              |
+| Gozio     | \$29.98 | 1st  | My favorite, sweet and nutty. I think it also tastes a bit tangy, like green apples. Mmmmm. I’ll just have it neat please, thank you very much.                                                                                                                                                                                                                                                                              | s |
 
-\* Prices were taken all from the same store which was not the liquor store we visited in the story above, hence the price difference
+</div>
+
+\* Prices were taken all from the same store which was not the liquor store we visited in the story above, hence the price difference. Prices listed are the full price (not the sale price) for 750ml as of January 2021

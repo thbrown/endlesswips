@@ -11,9 +11,9 @@ const Header = ({ siteTitle }) => (
     ></link>
     <a href="/">
       <div className="site-header-content">
-        <img src={startLogo} alt="Logo Start" width="50" height="30"></img>
+        <img src={startLogo} alt="Logo Start" height="30"></img>
         <div className="site-header-text">{siteTitle}</div>
-        <img src={endLogo} alt="Logo End" width="50" height="30"></img>
+        <img src={endLogo} alt="Logo End" height="30"></img>
       </div>
     </a>
   </div>

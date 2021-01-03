@@ -1,13 +1,23 @@
 module.exports = {
-  pathPrefix: "/endlesswips",
   siteMetadata: {
     title: `Endless WIPS`,
-    description: `Passion projects are never over.`,
-    author: `@thbrown`,
-    siteURL: "http://localhost:8000",
+    description: `Passion projects are never over`,
+    author: `@endlesswips`,
+    siteUrl: "https://endlesswips.com",
+    image: "https://live.staticflickr.com/65535/50543892593_8dee9b7594_o.png",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-163727547-2",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -63,11 +73,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `endlesswips`,
+        short_name: `endlesswips`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#980500`,
+        theme_color: `#980500`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
@@ -75,5 +85,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-meta-redirect`,
   ],
 };

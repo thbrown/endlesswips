@@ -11,7 +11,7 @@ const Layout = ({ location, children }) => {
       site {
         siteMetadata {
           title
-          siteURL
+          siteUrl
         }
       }
     }
@@ -33,89 +33,75 @@ const Layout = ({ location, children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+
       <div className="main-content">
         <main>{children}</main>
       </div>
       <div className="outer footer-wrap">
         <footer className="inner footer-content">
           <a
-            href={`mailto:?Subject=Sharable%20Page%20from%20Endless%20WIPS&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 ${data.site.siteMetadata.siteURL}${location.pathname}`}
+            href={`mailto:?Subject=Sharable%20Page%20from%20Endless%20WIPS&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 ${data.site.siteMetadata.siteUrl}${location.pathname}`}
           >
             <img
               className="share-button"
               alt="Email"
-              src="https://simplesharebuttons.com/images/somacro/email.png"
+              src="https://live.staticflickr.com/65535/50543892693_8abcacb9c2_o.png[/img][/url][url=https://flic.kr/p/2k1oEnK"
             />
           </a>
-
           <a
-            target="_blank"
-            rel="noreferrer"
-            href={`http://www.facebook.com/sharer.php?u=${data.site.siteMetadata.siteURL}${location.pathname}`}
+            href={`http://www.facebook.com/sharer.php?u=${data.site.siteMetadata.siteUrl}${location.pathname}`}
           >
             <img
               className="share-button"
               alt="Facebook"
-              src="https://simplesharebuttons.com/images/somacro/facebook.png"
+              src="https://live.staticflickr.com/65535/50544759302_45628871e6_o.png"
             />
           </a>
-
           <a
-            target="_blank"
-            rel="noreferrer"
-            href={`http://www.linkedin.com/shareArticle?mini=true&amp;url=${data.site.siteMetadata.siteURL}${location.pathname}`}
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${data.site.siteMetadata.siteUrl}${location.pathname}`}
           >
             <img
               className="share-button"
               alt="LinkedIn"
-              src="https://simplesharebuttons.com/images/somacro/linkedin.png"
+              src="https://live.staticflickr.com/65535/50544759287_33ed3aea90_o.png"
             />
           </a>
-
           <a
-            target="_blank"
-            rel="noreferrer"
-            href={`http://pinterest.com/pin/create/button/?url=${data.site.siteMetadata.siteURL}${location.pathname}`}
+            href={`http://pinterest.com/pin/create/button/?url=${data.site.siteMetadata.siteUrl}${location.pathname}`}
           >
             <img
               className="share-button"
               alt="Pinterest"
-              src="https://simplesharebuttons.com/images/somacro/pinterest.png"
+              src="https://live.staticflickr.com/65535/50544617596_d00645c6d8_o.png"
             />
           </a>
-
-          <a href="javascript:;" onClick={print}>
+          <button style={{ cursor: "pointer" }} onClick={print}>
             <img
               className="share-button"
               alt="Print"
-              src="https://simplesharebuttons.com/images/somacro/print.png"
+              src="https://live.staticflickr.com/65535/50544759257_a6af321547_o.png"
             />
-          </a>
-
+          </button>
           <a
-            target="_blank"
-            rel="noreferrer"
-            href={`http://reddit.com/submit?url=${data.site.siteMetadata.siteURL}${location.pathname}`}
+            href={`http://reddit.com/submit?url=${data.site.siteMetadata.siteUrl}${location.pathname}`}
           >
             <img
               className="share-button"
               alt="Reddit"
-              src="https://simplesharebuttons.com/images/somacro/reddit.png"
+              src="https://live.staticflickr.com/65535/50543892613_21a716da3a_o.png"
             />
           </a>
-
           <a
-            target="_blank"
-            href={`https://twitter.com/share?url=${data.site.siteMetadata.siteURL}${location.pathname}`}
+            href={`https://twitter.com/share?url=${data.site.siteMetadata.siteUrl}${location.pathname}`}
           >
             <img
               className="share-button"
               alt="Twitter"
-              src={`https://simplesharebuttons.com/images/somacro/twitter.png`}
+              src={`https://live.staticflickr.com/65535/50544759227_5b8368069c_o.png`}
             />
           </a>
           <div className="copyright">
-            ©Endleswips.com All Rights Reserved |{" "}
+            ©Endlesswips.com All Rights Reserved |{" "}
             <a href="/about/#disclaimer">Disclaimer</a>
           </div>
         </footer>

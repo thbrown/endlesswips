@@ -32,6 +32,7 @@ export default class PostTile extends React.Component<PostTileProps> {
           <div className="post-tile-title">{this.props.title}</div>
           <img
             src={this.titleimage}
+            alt=""
             style={{
               objectFit: "cover",
               objectPosition: `center`,

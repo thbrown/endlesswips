@@ -3,7 +3,7 @@ slug: "/guaranteed-stock-market-returns"
 title: "Guaranteed Stock Market Returns?"
 subtitle: "Analysis of S&P 500 Returns From 1871 to 2020"
 firstposted: "2020-10-26"
-lastupdated: "2020-10-26"
+lastupdated: "2021-01-02"
 titleimage: "https://live.staticflickr.com/65535/50334903467_5586168163_o.png"
 titleimagetopmargin: -3
 hidden: false
@@ -11,15 +11,9 @@ hidden: false
 
 One of my favorite financial graphics was included in the [NY times in 2011](http://archive.nytimes.com/www.nytimes.com/interactive/2011/01/02/business/20110102-metrics-graphic.html?_r=2). The chart was produced by [Crestmont Research](https://www.crestmontresearch.com/) and it showcases the returns of an investment in the S&P 500 starting in any given year since 1920 and ending any other year (until 2011).
 
-The reason I like the chart so much is that it addresses some concepts that I find difficult to conceptualize: **historic long-term market returns, short-term volatility, and what lies between them.**
+The reason I like the chart so much is that it addresses some concepts that I find difficult to conceptualize: **historic long-term market returns, short-term volatility, and what lies in between.**
 
-The data sparked some curiosities though:
-
-1. The returns suggested by the Times chart seem low to me based on other estimates. The chart accounts for inflation and dividends. It also includes "taxes and fees", but doesn't specify what those are in the article (though their website does have an [assumptions page](https://www.crestmontresearch.com/docs/Stock-Matrix-Assumptions.pdf) that were likely used).
-1. More data could be included. Almost a decade of data has accumulated since this article was published and there exists S&P 500 data dating all the way back to the 1870s[^1].
-1. The analysis show how a lump sum investment has faired over the last century, but it would also be interesting to see how periodic investments and dollar cost averaging affect the results.
-
-Given these, I decided to reproduce a few different versions of this chart myself using [Robert Shiller's publicly available S&P 500 data](http://www.econ.yale.edu/~shiller/data.htm). This gives me control over both the data used and the assumptions. Here is the first one:
+I decided to reproduce a few different versions of this chart myself using [Robert Shiller's publicly available S&P 500 data](http://www.econ.yale.edu/~shiller/data.htm). This gives me control over both the data used and the assumptions. Here is the first one:
 
 <div class="graphic-title">
 
@@ -31,17 +25,25 @@ Given these, I decided to reproduce a few different versions of this chart mysel
 
 This chart includes re-invested dividends and is adjusted for inflation via CPI but **does not** account for any taxes or fees.
 
+I chose to do this because the original graphic sparked some curiosities:
+
+1. The Times/Crestmont chart suggests a median return of 4.1%, which seems low to me based on other estimates. The chart accounts for inflation and dividends. It also includes "taxes and fees", but doesn't specify what those are in the article (though their website does have an [assumptions page](https://www.crestmontresearch.com/docs/Stock-Matrix-Assumptions.pdf) that were likely used).
+
+1. More data could be included. Almost a decade of data has accumulated since this article was published and there exists S&P 500 data dating all the way back to the 1870s[^1].
+
+1. The analysis shows how a lump sum investment has faired over the last century or so, but it would also be interesting to see how periodic investments and dollar cost averaging affect the results.
+
 ## How do the charts compare?
 
 According to the Times, the original chart was made by Ed Easterling, a financial researcher at [Crestmont Research](https://www.crestmontresearch.com/), after a debate with a client regarding expected market returns. If you are interested, Crestmont research has [updated matrices on their website](https://www.crestmontresearch.com/stock-matrix-options/), which, though styled differently, contain additional data such as P/E ratios, significant events of the year, and more.
 
 My chart has the same general shape of the [Crestmont/Times graph](<(http://archive.nytimes.com/www.nytimes.com/interactive/2011/01/02/business/20110102-metrics-graphic.html?_r=2)>). You can see various lengthy bull markets in 1920s, 1950s, 1980s, and 1990s. There is the great depression, high inflation of 1970s, and the 2008 financial meltdown.
 
-However, you'll also notice that the returns in my version of the graphic are significantly higher. This is most likely due to my exclusion of taxes and fees.
+However, you'll also notice that the returns in my version of the graphic are significantly higher. This is most likely due to my exclusion of taxes and fees. But which is more relevant for your situation? Personally, I really just wanted to know what expected return to plug into my retirement calculator. If you don't care for all the assumptions talk, just [skip to the answer](/guaranteed-stock-market-returns#so-whats-the-answer).
 
-### Historic Long-Term Market Returns
+## Assumptions Affect Historic Long-Term Market Returns
 
-I've seen so many different estimates for long term expected market returns that are supposedly based on historical performance of the S&P500. The Times chart suggests a median annual return of 4.1%, while I've seen other estimates as high as [12%](https://www.daveramsey.com/blog/the-12-reality). Why is such a concrete question so hard to get a consistent answer to?
+I've seen so many different estimates for long term expected market returns that are supposedly based on historical performance of the S&P500. As stated earlier, the Times chart suggests a median annual return of 4.1%, while I've seen other estimates as high as [12%](https://www.daveramsey.com/blog/the-12-reality). Why is such a concrete question so hard to get a consistent answer to?
 
 One reason there are many different estimates is that there are many variables.
 
@@ -61,7 +63,7 @@ Luckily for us, we can narrow this down because there are reasonable answers to 
 
 <div className="rant">
 
-#### Grey Box Tangent: CAGR Calculation
+### Grey Box Tangent: CAGR Calculation
 
 Say you invest $100 in a stock. It goes up 200% the next day (cha ching), to $300. The day after that, it goes down 100%, to \$0. You now have no money, but you can brag to your friends that your investment averaged (`(200% + -100%)/2`) a 50% daily return!
 
@@ -123,7 +125,7 @@ For example, from 1999 to 2004:
   - Different tax rates on capital gains in different states/countries
   - Different funds produce different amounts of taxable gains when selling underlying assets
 
-  So, in order to keep the charts on this page broadly applicable, taxes have been excluded. However, to get a feel for how taxes affect long-term returns, I've included a table with long-term CAGR calculations for all the current federal U.S. capital gains tax rates.
+  So, in order to keep the charts on this page broadly applicable, taxes have been excluded. However, to get a feel for how taxes affect long-term returns, I've included a [table](/guaranteed-stock-market-returns/#sp-500-cagr-adjusted-by-capital-gains-rate-and-expense-ratio-br-1871-2020) with long-term CAGR calculations for all the current federal U.S. capital gains tax rates.
 
   In the table we'll account for capital gains that show up in two different places:
 
@@ -133,15 +135,15 @@ For example, from 1999 to 2004:
 
           I'm also taking out the capital gains tax as soon as the dividends are paid, not waiting until the end of the year.
 
-  1.  Capital gains are applied in the final year when all the money is withdrawn. Because of re-invested dividends, the basis varies. For these calculations I'm using the [average cost basis method](https://www.irs.gov/faqs/capital-gains-losses-and-sale-of-home/mutual-funds-costs-distributions-etc/mutual-funds-costs-distributions-etc-1) to account for this variation.
+  2.  Capital gains are applied in the final year when all the money is withdrawn. Because of re-invested dividends, the basis varies. For these calculations I'm using the [average cost basis method](https://www.irs.gov/faqs/capital-gains-losses-and-sale-of-home/mutual-funds-costs-distributions-etc/mutual-funds-costs-distributions-etc-1) to account for this variation.
 
   And we will not account for capital gains that can show up in one other place:
 
-  1.  Capital gains also occur when a fund sells underlying appreciated securities. Funds don't pay capital gains taxes; their shareholders do. Funds are required by the IRS to distribute almost all of their capital gains to investors; the investors must pay the capital gains on those distributions if the funds are held in a taxable account.
+  3.  Capital gains also occur when a fund sells underlying appreciated securities. Funds don't pay capital gains taxes; their shareholders do. Funds are required by the IRS to distribute almost all of their capital gains to investors; the investors must pay the capital gains on those distributions if the funds are held in a taxable account.
 
-          The words used to describe this distribution are "capital gains disbursements". They effectively increase the ongoing cost of holding the investment. The word "disbursement" makes it sound exciting, like you are getting a dividend, but really it's just a forced liquidation of a portion of the fund you own. The value of the assets within the fund drop by the amount of the disbursement. So all you're really getting is tax bill.
+          The words used to describe this distribution are "capital gains disbursements". The word "disbursement" makes it sound exciting, like you are getting a dividend, but really it's just a forced liquidation of a portion of the fund you own. The value of the assets within the fund drop by the amount of the disbursement. So all you're really getting is tax bill which increases the ongoing cost of holding the investment.
 
-          The good news is that funds that track indices (like the S&P 500) are less susceptible to tax-inducing churn than actively managed funds that might buy and sell more frequently because of management transitions or their investing philosophies. Index funds still occasionally need to sell assets due to re-balancing, changes in the index, or paying exiting shareholders, but capital gains distributions for index funds are rare **TODO citation**.
+          The good news is that funds that track indices (like the S&P 500) are less susceptible to tax-inducing churn than actively managed funds that might buy and sell more frequently because of management transitions or their investing philosophies.
 
           ETFs are particularly tax efficient in this regard because funds can interact with brokers via special IRS rules, allowing ETFs to defer gains. How exactly this works is topic for another post.
 
@@ -149,19 +151,21 @@ For example, from 1999 to 2004:
 
   Just like taxes, fees can vary significantly from situation to situation. So, in order to keep the charts on this page broadly applicable, fees have been excluded as well. However, like with capital gains, I've included long-term CAGR calculations for a handful of different fee levels.
 
-  There are a few different kinds of fees I'm aware of when dealing with S&P 500 ETFs or mutual funds:
+  There are a few kinds of fees I'm aware of when dealing with S&P 500 ETFs or mutual funds. Many fees are reasonable to exclude because they are zero or are practically zero for several popular large S&P 500 ETFs/Mutual Funds. Therefore, the only fee we take into consideration is the expense ratio.
 
-  1.  _Expense Ratio_ - This fee is applied, over a year-long period, on the whole value of the investment. This covers the operating expenses for the fund.
+  - _Expense Ratio_ (included) - This fee is applied, over a year-long period, on the whole value of the investment. This covers the operating expenses for the fund.
 
-      The remaining fees, I believe, are reasonable to exclude because they are zero or are practically zero for several popular large S&P 500 ETFs/Mutual Funds. Therefore, the only fee we take into consideration is the expense ratio.
+  - _Advisory Fee_ (excluded) - If you hold the S&P 500 ETF/Mutual Fund indirectly through a financial advisor/wealth manager/robo-advisor, you're likely paying this fee. Many (but not all) advisors charge clients a percentage fee based on the client's total assets under their management. This fee is typically in the neighborhood of ~1% for human advisors and ~0.25% for robo-advisors.
 
-  2.  _Advisory Fee_ - If you hold the S&P 500 ETF/Mutual Fund indirectly through a financial advisor/wealth manager/robo-advisor, you're likely paying this fee. Many (but not all) advisors charge clients a percentage fee based on the client's total assets under their management. This fee is typically in the neighborhood of ~1% for human advisors and ~0.25% for robo-advisors. These percentages may sound small, but you'll see that they have a _significant_ negative effect on returns. If this applies to you, you can add your advisory fee percentage to the expense ratio when looking up your CAGR in the table below. That said, you can hold the fund directly in a brokerage account (e.g., Vanguard, Fidelity) to avoid paying this fee.
+         These percentages may sound small, but you'll see that they have a _significant_ negative effect on returns. If this applies to you, you can add your advisory fee percentage to the expense ratio when looking up your CAGR in the table below. That said, you can hold the fund directly in a brokerage account (e.g., Vanguard, Fidelity) to avoid paying this fee.
 
-  3.  _Commissions_ - Any kinds of sales fees, including front-end or back-end load fees on mutual funds. You can easily find commission-free trades for S&P 500 ETFs or no-load S&P 500 mutual funds.
+  - _Commissions_ (excluded) - Any kinds of sales fees, including front-end or back-end load fees on mutual funds. You can easily find commission-free trades for S&P 500 ETFs or no-load S&P 500 mutual funds.
 
-  4.  _Ask-Bid Spread_ and _Net Asset Value (NAV) vs Market Price Differences_ - These fees are a side effect of ETF intraday trading. Neither of these apply to mutual funds, which are priced daily. Unlike the expense ratio, these fees apply only on buy/sell transactions. For large S&P 500 ETFs, ask/bid spread is typically, small e.g. ~[0.01%](https://advisors.vanguard.com/investments/bidaskspread). NAV differences can end up effectively being a fee or a credit. On average, it's looks like [a wash](https://ycharts.com/companies/VOO/discount_or_premium_to_nav). You can read more details on these ETF fees [here](https://www.schwab.com/resource-center/insights/content/etfs-how-much-do-they-really-cost#:~:text=When%20investing%20in%20ETFs%2C%20consider,premiums%20to%20net%20asset%20value).
+  - _Ask-Bid Spread_ and _Net Asset Value (NAV) vs Market Price Differences_ (excluded) - These fees are a side effect of ETF intraday trading. Neither of these apply to mutual funds, which are priced daily. Unlike the expense ratio, these fees apply only on buy/sell transactions.
 
-#### So What's the Answer?
+         For large S&P 500 ETFs, ask/bid spread is typically, small e.g. ~[0.01%](https://advisors.vanguard.com/investments/bidaskspread). NAV differences can end up effectively being a fee or a credit. On average, it's [a wash](https://ycharts.com/companies/VOO/discount_or_premium_to_nav). You can read more details on these ETF fees [here](https://www.schwab.com/resource-center/insights/content/etfs-how-much-do-they-really-cost#:~:text=When%20investing%20in%20ETFs%2C%20consider,premiums%20to%20net%20asset%20value).
+
+### So What's the Answer?
 
 For your reference, based of the Shiller data:
 
@@ -171,9 +175,11 @@ How do taxes and fees affect this value? Here is a table.
 
 <div class="graphic-title">
 
-#### S&P 500 CAGR Adjusted by Capital Gains Rate and Expense Ratio <br> (1871-2020)
+### S&P 500 CAGR Adjusted by Capital Gains Rate and Expense Ratio <br> (1871-2020)
 
 </div>
+
+<div class="table-container">
 
   <table style="width: 100%">
     <thead>
@@ -192,20 +198,25 @@ How do taxes and fees affect this value? Here is a table.
     </tbody>
   </table>
 
+</div>
+
 Note: This table assumes a constant capital gains rate and expense ratio for the entire life of the investment. There are at least two major reasons this might not be the case:
 
 1.  You are in a different capital gains bracket due to income differences when reinvesting dividends vs. withdrawing money.
 1.  Capital gains tax rates have varied over the ~150 years, and will likely continue to do so.
 
-Overall, my assumptions about taxes and fees represent a departure from the philosophy of the original Crestmont/Times chart. The intention of that chart seems to be tracking the returns of an actual investment from one point in history to another (including historic fees and tax rates). However, the analysis in this table only takes the raw growth and dividend numbers from history and applies modern taxes and fees. Essentially, I assume that modern taxes and fees are more indicative of future taxes and fees than historical taxes and fees. This has the added benefit of being easier to calculate.
+Overall, my assumptions about taxes and fees represent a departure from the philosophy of the original Crestmont/Times chart. The intention of that chart seems to be tracking the returns of an actual investment from one point in history to another (including historic fees and tax rates).
+
+In contrast, the analysis in this table only takes the raw growth and dividend numbers from history and applies modern taxes and fees. Essentially, I assume that modern taxes and fees are more indicative of future taxes and fees than historical taxes and fees. This has the added benefit of being easier to calculate.
 
 How much does a percentage point matter? Quite a bit. Here are the returns of hypothetical \$100 investment at various rates and periods:
 
 <div class="graphic-title">
 
-#### Future Value of a \$100 Investment
+### Future Value of a \$100 Investment
 
 </div>
+<div class="table-container">
 
 <table style="width: 100%">
 <thead><tr><th colspan="2"></th><th colspan="5" style="text-align: center; margin: 0px;">Investment Period In Years</th></tr></thead><tbody>
@@ -220,11 +231,13 @@ How much does a percentage point matter? Quite a bit. Here are the returns of hy
  <tr><th>-2.02%</th><td>$82</td><td>$67</td><td>$54</td><td>$44</td><td>$13</td></tr>
 </tbody></table>
 
+</div>
+
 The last row shows the effect of holding cash, which loses purchasing power due to an an inflation CAGR of about -2% since 1871 based on CPI data.
 
 You can see all my data and calculations [here](https://docs.google.com/spreadsheets/d/1XW8W1ik4HbWxrs48l9yAvCG5cduDnU2SOnNB0a6w6eI/edit?usp=sharing).
 
-### Shorter Term Volatility
+## How Short Is Short Term Volatility
 
 150 years is a long time. How long does it take for this 6.95% rate to come to fruition?
 
@@ -234,20 +247,20 @@ Zoom out a bit and it's still pretty wild; let's take a look at what you might e
 
 <div class="graphic-title">
 
-#### One Year Returns of the S&P 500, 1871-2020
+### One Year Returns of the S&P 500, 1871-2020
 
 </div>
 <return-histogram title="S&P 500 Returns"></return-histogram>
 
 You shouldn't be surprised if you lose money in a 1 year period. 45 of 148 years in the data above (~30%) had negative real returns. But how long is the "short term"? It might be longer than you think.
 
-If your timing is really bad, e.g., buying in the midst of the tech bubble in 1999 and selling right after the great recession in 2009, you'd have lost money even after 10 years (doesn't seem like a short amount of time). But if this theoretical bad-luck investor hadn't sold in 2009, he or she would still be up over 4% annually as of Jan 2020 thanks to recent returns.
+If your timing is really bad, e.g., buying in the midst of the tech bubble in 1999 and selling right after the great recession in 2009, you'd have lost money even after 10 years (which doesn't seem like a short amount of time). But if this theoretical bad-luck investor hadn't sold in 2009, he or she would still be up over 4% annually as of Jan 2020 thanks to recent returns.
 
 This following table shows the best/worst/median return for investment periods of various lengths. Keep in mind that these figures are Jan of one year to Jan of the next, so it's possible there are some inter-year periods with bigger or smaller returns.
 
 <div class="graphic-title">
 
-#### Returns of S&P 500 - Lump Sum Investment
+### Returns of S&P 500 - Lump Sum Investment
 
 </div>
 
@@ -267,7 +280,7 @@ This following table shows the best/worst/median return for investment periods o
 
 </div>
 
-### How does spreading out investments affect the return?
+## How Does Spreading Out Investments Affect the Return?
 
 While interesting, this isn't always how investments work. Most people don't just have a stockpile of money they invest in totality in a single year. Many people invest money as they can, every paycheck, with consistent contributions to a retirement plan or taxable investment account.
 
@@ -275,7 +288,7 @@ Say an investor decided to invest a fixed (but inflation adjusted) dollar amount
 
 <div className="rant">
 
-#### Grey Box Tangent: IRR Calculation
+### Grey Box Tangent: IRR Calculation
 
 For this example, we'll discuss a 5 year period from 1999 to 2004. We'll treat each time we buy and sell a unit of S&P 500 as a separate investment. So over 5 years, we have 5 investments, with their respective CAGRs:
 
@@ -341,7 +354,7 @@ I regenerated the earlier chart with yearly investments instead of a single lump
 
 <div class="graphic-title">
 
-#### Returns of S&P 500 Chart - Yearly Investments
+### S&P 500 Returns Matrix - Yearly Investments
 
 </div>
 
@@ -350,14 +363,13 @@ I regenerated the earlier chart with yearly investments instead of a single lump
 A few observations about this chart:
 
 1.  Each square represents a combination of all squares below its position on the original chart. So it's sort of like smearing the chart upward.
-1.  The further in the past an investment is, the more likely it will stabilize to roughly the long-term median value (somewhere around 6% to 7%).
-1.  One might think that periodic purchases reduce volatility, but in reality, they expose you to volatility for longer because recent investments are a bigger part of your portfolio.
+1.  The further in the past an investment is, the more likely it will stabilize to roughly the long-term median value (somewhere around 6% to 7%). One might think that periodic purchases reduce volatility, but in reality, they expose you to volatility for longer because recent investments are a bigger part of your portfolio.
 
 The following table summarizes the worst/best/median return for investment periods of various lengths, if investing an equal amount every year.
 
 <div class="graphic-title">
 
-#### S&P 500 Returns - Yearly Investments
+### S&P 500 Returns - Yearly Investments
 
 </div>
 
@@ -375,11 +387,11 @@ The following table summarizes the worst/best/median return for investment perio
 | 70              | 5.31%        | 1879 - 1949        | 8.25%       | 1930 - 2000       | 6.85%         |
 | 80              | 5.63%        | 1902 - 1982        | 8.22%       | 1920 - 2000       | 6.95%         |
 
-Over shorter periods, you can see the increased volatility in the magnitudes of the best returns and the worst returns. In contrast, the median returns are largely the same at all time periods measured. It takes about 40 or 50 years, but eventually all the numbers start to look similar to the lump sum case.
-
 </div>
 
-#### Dollar Cost Averaging (DCA)
+Over shorter periods, you can see the increased volatility in the magnitudes of the best returns and the worst returns. In contrast, the median returns are largely the same at all time periods measured. It takes about 40 or 50 years, but eventually all the numbers start to look similar to the lump sum case.
+
+### Dollar Cost Averaging (DCA)
 
 But what if you do have a giant pile of money? Is it better to...
 
@@ -388,7 +400,7 @@ But what if you do have a giant pile of money? Is it better to...
 
 <div className="rant">
 
-#### Grey Box Tangent: IRR and CAGR with Dollar Cost Averaging
+### Grey Box Tangent: IRR and CAGR with Dollar Cost Averaging
 
 We're back to having a pile of cash at the beginning of our investment period - we're not earning money a little bit at a time. We will reserve all our cash at the beginning of the investment period. Our cash will be in two different buckets:
 
@@ -398,7 +410,7 @@ We're back to having a pile of cash at the beginning of our investment period - 
 
 1. The second bucket is invested in the market.
 
-The share of the _initial_ investment allocated to each bucket look like this each year:
+The share of the _initial_ cash allocated to each bucket look like this each year:
 
 <svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg"> <defs></defs> <g transform="matrix(0.319583, 0, 0, 0.319583, 16.641726, 44.171867)" style=""></g> <g transform="matrix(0.319515, 0, 0, 0.319515, 16.64171, 44.171867)" style=""></g> <g transform="matrix(0.320039, 0, 0, 0.320039, 16.641693, 44.171841)" style=""></g> <g transform="matrix(0.216577, 0, 0, 0.216577, 206.424789, 50.941322)" style=""></g> <g transform="matrix(0.320319, 0, 0, 0.320319, 16.641693, 44.171841)" style=""></g> <g transform="matrix(0.216766, 0, 0, 0.216766, 127.215866, 52.994423)" style=""></g> <g transform="matrix(0.318847, 0, 0, 0.318847, 28.308897, 309.446655)" style=""></g> <g transform="matrix(1, 0, 0, 1, 98.642891, 81.444298)"></g> <g transform="matrix(1, 0, 0, 1, 98.642891, 81.444298)"></g> <g transform="matrix(1, 0, 0, 1, 98.642891, 81.444298)"></g> <g transform="matrix(0.598895, 0, 0, 0.598895, 78.720329, 9.057091)" style=""> <path d="M74,74L74,8A66,66,0,0,1,112.79382665130322,127.39512162874652L74,74A0,0,0,0,0,74,74" stroke="#000000" stroke-width="2" fill="#9aa675" style="paint-order: stroke;"></path> </g> <g transform="matrix(0.598895, 0, 0, 0.598895, 78.720329, 9.057091)" style=""> <path d="M74,74L112.79382665130322,127.39512162874652A66,66,0,1,1,74,8L74,74A0,0,0,1,0,74,74" stroke="#000000" stroke-width="2" fill="#cda49b" style="paint-order: stroke;"></path> </g> <g transform="matrix(0.598895, 0, 0, 0.598895, 160.429565, 8.543625)" style=""> <path d="M74,74L35.20617334869678,127.39512162874652A66,66,0,0,1,74,8L74,74A0,0,0,0,0,74,74" stroke="#000000" stroke-width="2" fill="#cda49b" style="paint-order: stroke;"></path> </g> <g transform="matrix(0.598895, 0, 0, 0.598895, 160.429565, 8.543625)" style=""> <path d="M74,74L74,8A66,66,0,1,1,35.20617334869678,127.39512162874652L74,74A0,0,0,1,0,74,74" stroke="#000000" stroke-width="2" fill="#9aa675" style="paint-order: stroke;"></path> </g> <g transform="matrix(0.598895, 0, 0, 0.598895, 242.636108, 9.035553)" style=""> <path d="M74,74L11.230269924519867,53.60487837125345A66,66,0,0,1,74,8L74,74A0,0,0,0,0,74,74" stroke="#000000" stroke-width="2" fill="#cda49b" style="paint-order: stroke;"></path> </g> <g transform="matrix(0.598895, 0, 0, 0.598895, 242.636108, 9.035553)" style=""> <path d="M74,74L74,8A66,66,0,1,1,11.230269924519867,53.60487837125345L74,74A0,0,0,1,0,74,74" stroke="#000000" stroke-width="2" fill="#9aa675" style="paint-order: stroke;"></path> </g> <g transform="matrix(0.598895, 0, 0, 0.598895, 324.906067, 8.621937)" style=""> <ellipse cx="74" cy="74" rx="66" ry="66" stroke="#000000" stroke-width="1" fill="#9aa675"></ellipse> </g> <g transform="matrix(0.216268, 0, 0, 0.216268, 375.443512, 55.826019)" style=""> <text class="slice" style="text-anchor: middle; font-size: 37px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" y="-4.604" x="-27.744">100%</text> <text x="-32.368" y="-209.248" class="pieTitleText" style="white-space: pre; font-family: &quot;trebuchet ms&quot;, verdana, arial; font-size: 40px; line-height: 40px; text-anchor: middle;">2003</text> <g class="legend" transform="matrix(2, 0, 0, 2, 169.761139, -39.752213)"> <rect width="18" height="18" style="paint-order: stroke markers; fill: rgb(205, 164, 155); stroke: rgb(0, 0, 0);" y="-13.872"></rect> <text style="font-family: &quot;trebuchet ms&quot;, verdana, arial; font-size: 17px; white-space: pre;" x="22" y="0.128">0% Bucket</text> </g> <g class="legend" transform="matrix(2, 0, 0, 2, 169.761139, 9.247784)"> <rect width="18" height="18" style="fill: rgb(154, 166, 117); paint-order: stroke; stroke: rgb(0, 0, 0);" y="-13.872"></rect> <text style="font-family: &quot;trebuchet ms&quot;, verdana, arial; font-size: 17px; white-space: pre;" x="22" y="0.128">S&amp;P 500 Bucket</text> </g> </g> <g transform="matrix(0.589084, 0, 0, 0.589084, -2.31773, 9.1269)" style=""> <path d="M74,74L74,8A66,66,0,0,1,136.76973007548014,53.60487837125348L74,74A0,0,0,0,0,74,74" stroke="#000000" stroke-width="2" fill="#9aa675" style="paint-order: stroke;"></path> </g> <g transform="matrix(0.589084, 0, 0, 0.589084, -2.31773, 9.1269)" style=""> <path d="M74,74L136.76973007548014,53.60487837125348A66,66,0,1,1,74,8L74,74A0,0,0,1,0,74,74" stroke="#000000" stroke-width="2" fill="#cda49b" style="paint-order: stroke;"></path> </g> <g transform="matrix(1, 0, 0, 1, 26.180211, 58.809049)"></g> <g transform="matrix(0.216222, 0, 0, 0.216222, 289.194336, 53.705833)" style=""> <text class="slice" style="text-anchor: middle; font-size: 37px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="-83.52" y="-80.577">20%</text> <text class="slice" style="text-anchor: middle; font-size: 37px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="15.97" y="78.341">80%</text> <text x="-15.275" y="-201.118" class="pieTitleText" style="white-space: pre; font-family: &quot;trebuchet ms&quot;, verdana, arial; font-size: 40px; line-height: 40px; text-anchor: middle;">2002</text> <text class="slice" style="text-anchor: middle; font-size: 37.1px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="-483.595" y="-17.989">40%</text> <text class="slice" style="text-anchor: middle; font-size: 37.1px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="-321.236" y="48.523">60%</text> <text x="-395.478" y="-198.937" class="pieTitleText" style="white-space: pre; font-family: &quot;trebuchet ms&quot;, verdana, arial; font-size: 40.1px; line-height: 40px; text-anchor: middle;">2001</text> <text class="slice" style="text-anchor: middle; font-size: 37.1px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="-852.772" y="51.147">60%</text> <text class="slice" style="text-anchor: middle; font-size: 37.1px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="-682.285" y="-20.04">40%</text> <text class="pieTitleText" style="white-space: pre; font-family: &quot;trebuchet ms&quot;, verdana, arial; font-size: 40.1px; line-height: 40px; text-anchor: middle;" x="-769.841" y="-196.512">2000</text> <text class="slice" style="text-anchor: middle; font-size: 36.9px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="-1202.746" y="81.757">80%</text> <text class="slice" style="text-anchor: middle; font-size: 36.9px; white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;trebuchet ms&quot;, verdana, arial;" x="-1075.385" y="-76.849">20%</text> <text x="-1146.003" y="-197.129" class="pieTitleText" style="white-space: pre; font-family: &quot;trebuchet ms&quot;, verdana, arial; font-size: 36.9px; line-height: 40px; text-anchor: middle;">1999</text> </g> </svg>
 
@@ -427,7 +439,9 @@ The good news is we once again have a single `startValue` and single `endValue`.
     CAGR = ($4.7152/ $5) ^ (1 / (2004-1999)) - 1
     CAGR = -0.01166 ~= -1.17%
 
-With some changes to the ["yearly investment" IRR](#grey-box-tangent-irr-calculation) approach, we can also use IRR to calculate the annualized return. Instead of a series of -\$1 cash flows followed by a withdrawal windfall, we put all $5 into our investments in year one. It doesn't matter at this point that they are in two separate investment buckets. Each subsequent year we take out a dollar from our 0% investment bucket (+$1) and re-invest it into the S&P 500 bucket (-\$1) resulting intermediate net cashflows of zero.
+With some changes to the ["yearly investment" IRR approach](#grey-box-tangent-irr-calculation), we can also use IRR to calculate the annualized return. Instead of a series of -\$1 cash flows followed by a withdrawal windfall, we put all \$5 into our investments in year one. It doesn't matter at this point that they are in two separate investment buckets.
+
+Each subsequent year we take out a dollar from our 0% investment bucket (+$1) and re-invest it into the S&P 500 bucket (-\$1) resulting intermediate net cashflows of zero.
 
 At the end of the period, we get the same return value we just calculated. This last part is where we've accounted for the different investment buckets. So, the IRR calculation for yearly DCA from 1999-2004 would look like this:
 
@@ -441,7 +455,7 @@ Here is the same table as above, but with DCA instead of a lump sum or yearly in
 
 <div class="graphic-title">
 
-#### Returns of S&P 500 - Yearly Investments As An Alternative to Lump Sum (DCA)
+### Returns of S&P 500 - Yearly Investments As An Alternative to Lump Sum (DCA)
 
 </div>
 
@@ -463,7 +477,7 @@ Here is the same table as above, but with DCA instead of a lump sum or yearly in
 
 Comparing to the lump sum investment returns reveals that any money that is earning nothing when it could be invested in the market takes a significant chunk out of the median long-term earnings (about 2-3%, which out of 7% is about 29-43% of your total returns!). DCA also reduces the best case returns in all measured time intervals.
 
-Yearly DCA has a smaller beneficial effect on the worst case returns, but that effect tails off somewhere between a 10 and 20 year investment period. In fact, long-term worst returns are lower than lump sum investments.
+Yearly DCA has a smaller beneficial effect on the worst case returns, but that effect tails off somewhere between a 10 and 20 year investment period. In fact, long-term worst case returns are lower for DCA than they are for lump sum investments!
 
 It's potentially worse though. Remember that these numbers are adjusted for inflation. Therefore, the values above only apply if the dollars that aren't in the market are in some sort of investment vehicle that keeps up with inflation. If that money is all in cash, the cash drag will have an even larger negative effect.
 
@@ -474,11 +488,11 @@ In summary, DCA is sometimes portrayed as a good long-term strategy, but this an
 
 So unless you have an important reason to minimize downside risk in the short term, it makes sense to invest the entire giant pile of money right away, even if your market timing is really bad.
 
-Here is the pyramid chart for DCA:
+Here is the chart for DCA:
 
 <div class="graphic-title">
 
-#### S&P 500 Returns Matrix - Yearly Investments with DCA
+### S&P 500 Returns Matrix - Yearly Investments with DCA
 
 </div>
 
@@ -488,7 +502,7 @@ And I'll leave you with a table of all three investment strategies (lump sum, ye
 
 <div class="graphic-title">
 
-#### Returns of S&P 500 - Summary By Investment Strategy
+### Returns of S&P 500 - Summary By Investment Strategy
 
 </div>
 
@@ -500,10 +514,10 @@ And I'll leave you with a table of all three investment strategies (lump sum, ye
 
 <div className="rant">
 
-#### Disclaimer
+### Disclaimer
 
 I, the author of this post, have no formal tax, accounting, or financial background. I've done my best to ensure the information is accurate, but it's possible that I've missed important information, miscalculated something, or made some other errors/omissions. If you see something that's incorrect, please [contact me](/about/#contact). As always, the [site disclaimer](/about/#disclaimer) applies.
 
 </div>
 
-[^1]: Even though the S&P 500 index was established in 1926, work has been done to project the index into the past well into the 1800s. This projection is known as the Cowles extension and it's included as part of Shiller's data set.
+[^1]: Even though the S&P 500 index was established in 1926, work has been done to project the index backward into the early 1800s. This projection is known as the Cowles extension and it's included as part of Shiller's data set.

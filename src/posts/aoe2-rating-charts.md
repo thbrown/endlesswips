@@ -1,19 +1,19 @@
 ---
 slug: "/aoe2-de-rating-charts"
-title: "The Best Video Game of All Time"
+title: "The Best Video Game of All Time?"
 subtitle: "Rating Distribution Charts for Age of Empires 2: DE"
 firstposted: "2020-10-26"
-lastupdated: "2020-10-26"
-titleimage: "https://upload.wikimedia.org/wikipedia/uk/9/98/Age_of_Empires_2_gameplay.png"
+lastupdated: "2021-01-02"
+titleimage: "https://live.staticflickr.com/65535/50544759632_83d8c1033b_o.png"
 titleimagetopmargin: -30
 hidden: false
 ---
 
-I might lose some people here, but the best video game of all time is Age of Empires 2, a real time strategy game which was originally released in 1999.
+My favorite video game ever is Age of Empires 2, a real time strategy game which was originally released in 1999.
 
-![gameplay](https://upload.wikimedia.org/wikipedia/uk/9/98/Age_of_Empires_2_gameplay.png)
+![Age Of Empires 2 Screenshot](https://live.staticflickr.com/65535/50544759632_83d8c1033b_o.png)
 
-The game has a lot of depth. When I was younger, I exclusively played the game with cheat codes so I could slowly mass up large army and roll some AI. Now I see it more of an optimization problem and a battle of wits. Both ways of playing are fun. My wife and I play together. Everybody seems to get something [different](https://www.reddit.com/r/aoe2/comments/gi57f2/i_like_to_play_sim_city_on_age_of_empires_lol/) out of it and it seems to have a pretty wide demographic.
+The game has a lot of depth. When I was younger, I exclusively played the game with cheat codes so I could mass up large army and roll some computer player. Now I see it more of an optimization problem and a battle of decision making. Both ways of playing are fun. You don't have to have to be able to do a million actions per minute to have a good time. My wife and I play together. Everybody seems to get something [different](https://www.reddit.com/r/aoe2/comments/gi57f2/i_like_to_play_sim_city_on_age_of_empires_lol/) out of it and it seems to have a pretty wide demographic.
 
 ### AoE:II Where Has This Game Been for the Last Two Decades?
 
@@ -36,19 +36,19 @@ For example:
 <div style="display:flex; flex-wrap: wrap;text-align:center; justify-content: space-around;">
   <figure style="width: 48%">
     <img class="space" src="https://live.staticflickr.com/65535/50281312002_da3619ae91_o.png" alt="Goths architecture" width="100%">
-    <div>Goths - Appeared in the original game</div>
+    <div><b>Goths - Appeared in the original game</b></div>
   </figure>
   <figure style="width: 48%">
     <img class="space" src="https://live.staticflickr.com/65535/50279857138_1b50997283_z.jpg" alt="Aztecs architecture" width="100%">
-    <div>Aztecs - Added in the Conquers Expansion</div>
+    <div><b>Aztecs - Added in the Conquers Expansion</b></div>
   </figure>
   <figure style="width: 48%">
     <img class="space" src="https://live.staticflickr.com/65535/50280702817_eec11b6528_z.jpg" alt="Italians architecture" width="100%">
-    <div>Italians - Added in The Forgotten Expansion</div>
+    <div><b>Italians - Added in The Forgotten Expansion</b></div>
   </figure>
   <figure style="width: 48%">
     <img class="space" src="https://live.staticflickr.com/65535/50280702967_273a1733b7_z.jpg" alt="Slavs architecture" width="100%">
-    <div>Slavs - Added in The Forgotten Expansion</div>
+    <div><b>Slavs - Added in The Forgotten Expansion</b></div>
   </figure>
 </div>
 
@@ -75,7 +75,7 @@ This works great if you're in the top 100 or so jockeying for position among nam
 
 ### Reddit to the Rescue... Kinda
 
-Fortunately, [aoe2.net provides a sweet API](https://aoe2.net/#api) for pulling leaderboard data. Some resourceful Redditors created and posted histograms of the distribution of ratings so you can roughly see where your rating put you with respect to all other players:
+Fortunately, [aoe2.net provides an API](https://aoe2.net/#api) for pulling leaderboard data. Some resourceful Redditors created and posted histograms of the distribution of ratings so you can roughly see where your rating put you with respect to all other players:
 
 <a href="https://www.reddit.com/r/aoe2/comments/eq0ldm/age_of_empires_ii_de_elo_distribution_as_of/" target="_blank" rel="noopener noreferrer">
   <img src="https://live.staticflickr.com/65535/50284002243_6fe5001e65_o.png" alt="AoE2:DE ratings distribution" width="100%">
@@ -91,7 +91,7 @@ I put together a Javascript (Node) script to pull the data from the api, feed it
 
 Here's the thing about Google Charts, it looks just fine, but every time I use it I _very_ quickly run into limits on what I can customize. In this case, I wanted to be able to highlight specific histogram buckets that a player belonged to. That was a no-go with Google Charts. So, after so poking around various charting libraries I settled on [plot.ly](https://plotly.com/javascript/). The [documentation](https://plotly.com/javascript/plotlyjs-function-reference/#plotlyreact) seemed pretty good, and it looked like I'd be able to do what I wanted to do.
 
-I hosted the site on [Github Pages](https://pages.github.com/), which is awesome because it works well and it's free for public repositories. I use this feature frequency. I also took advantage [Github Actions](https://github.com/features/actions) for the first time. With it I was able to use chron-like syntax to update the data daily. I thought for sure I'd have to pay for some cloud computing service for this updating, but open sourced repos get free build time. Woot!
+I hosted the site on [Github Pages](https://pages.github.com/), which is great because it works well and it's free for public repositories. I use this feature frequency. I also took advantage [Github Actions](https://github.com/features/actions) for the first time. With it I was able to use chron-like syntax to update the data daily. I thought for sure I'd have to pay for some cloud computing service for this updating, but open sourced repositories get free build time. Woot!
 
 ### The Site
 
@@ -99,7 +99,7 @@ I originally published the site on my personal Github account. But after I did s
 
 Check it out: https://ratings.aoe2.se/
 
-Github Repository: https://github.com/SiegeEngineers/aoe2-de-rating-charts
+Github repository: https://github.com/SiegeEngineers/aoe2-de-rating-charts
 
 More than a decade of playing puts me here:
 
@@ -114,17 +114,9 @@ Of course you can play aoe2 in a non-competitive context. Many people do. Any mu
 People occasionally request that I add charts for 'unranked'. There are two issues with this:
 
 1. There are a lot more unranked players. This means that it takes longer to fetch the data from the api, longer for the web page to load, and the browser lags a bit with all that data. I'd have to redesign some things to get this working well.
-2. The data doesn't look all that clean anyways. First of all, a ton of people just have a rating of 1000 and it makes the chart look like it's flipping the us the bird. I've been told this is because people play against AIs with their friends and these matches count toward total games played but they do not influence a player's 'unranked' rating.
+2. The data doesn't look all that clean anyways. First of all, a ton of people just have a rating of 1000 and it makes the chart look like it's flipping the us the bird: ![Histogram of unranked players](https://live.staticflickr.com/65535/50545749056_6eb484666c_o.png) I've been told this is because people play against AIs with their friends and these matches count toward total games played but they do not influence a player's 'unranked' rating.
 
-   But that's not all, there is a whole slice of the distribution (about 1000 +/- 50) that looks like it just doesn't belong because the values abnormally high. It's possible it's because the play-vs-AI effect spreads out, but it ends so abruptly about 50 points out on each end. I think there must be something else going on there.
-
-Now, that doesn't mean I can't show you the distributions:
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="l3YHWiN" data-context="false" ><a href="//imgur.com/l3YHWiN">Aoe2:DE Unranked Ratings Distribution</a></blockquote>
-
-Here it the same chart with all the 1000 rated players removed:
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="nb3rGqH" data-context="false" ><a href="//imgur.com/nb3rGqH">Aoe2:DE Unranked Rating Distribution (Excluding rating 1000)</a></blockquote>
+   But that's not all, there is a whole slice of the distribution (about 1000 +/- 50) that looks like it just doesn't belong because the values are abnormally high. Here is the same chart with all the 1000 rated players removed: ![Histogram of unranked players. Excluding bucket with the rating '1000'](https://live.staticflickr.com/65535/50545889182_c1aa0774db_o.png) It's possible the abnormality can also be explained by the play-multiplyer-game-vs-AI effect, but it ends so abruptly about 50 points out on each end. I think there might be something else going on there.
 
 ### Promotion?
 
@@ -143,13 +135,11 @@ Here is Hera, one of the game's best players. I got enough stream points on his 
   </iframe>
 </div>
 
-The site averages about 100 users per day. Which makes me happy :)
-
 <div className="rant">
 
 ### Grey Box Tangent: Rating vs Elo, ELO?
 
-Elo is a system for determining relative ratings originally used to evaluate chess players. Elo is not an abbreviation (it's often seen written as ELO, I'm assuming this is because of the band) rather it is named after the system's creator. That I can see, none of the official Microsoft sources for Age of Empires 2 ever mention 'Elo'. The number that determines your place on the ladder is always referred to as 'rating' which implies a unique implementation. The only place I reference it in my tool is in the description. The idea being that some people will search for the term "ELO" anyways even if it isn't strictly correct.
+Elo is a system for determining relative ratings originally used to evaluate chess players. Elo is not an abbreviation (it's often seen written as ELO, I'm assuming this is because of the band) rather it is named after the system's creator. That I can see, none of the official Microsoft sources for Age of Empires 2 ever mention 'Elo'. The number that determines your place on the ladder is always referred to as 'rating' which implies a different implementation. The only place I reference it in my tool is in the description. The idea being that some people will search for the term "ELO" anyways even if it isn't strictly correct.
 
 </div>
 
@@ -159,4 +149,4 @@ As far as WIPs go, this one is pretty close to complete. But, of course, there a
 
 1. Performance - Page load times are longer than I'd like. There is also a noticeable delay when selecting a player. The delay is painfully obvious when Hera selects TheViper in the twitch clip above. I've made some improvements since, but I still need to look into webworkers for some processing. Perhaps I can do plot.ly stuff in a webworker w/ some kind of virtual DOM. Maybe move some more processing to build-time without adding too much network overhead.
 
-2. Annotation Layout - I had to write the algorithm that positions the annotations for player names myself and it's not that great. If you add a lot of players you'll see what I mean.
+2. Annotation Layout - I had to write the algorithm that positions the annotations for player names myself and it's not that great. If you add a lot of players you'll see what I mean. This is mostly challenging because of changing screen sizes (e.g. mobile vs desktop).

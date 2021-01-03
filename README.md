@@ -16,3 +16,5 @@ npm run-script:
 "clean": "gatsby clean",
 
 e.g. npm run-script develop
+
+./release.sh to move build files and commit them

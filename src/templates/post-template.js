@@ -8,6 +8,7 @@ import ParticleEffect from "../components/particles";
 import ReturnHistogram from "../components/return-histogram";
 import LunarLooEntry from "../components/lunar-loo";
 
+import SEO from "../components/seo";
 import Layout from "../components/layout";
 
 export const pageQuery = graphql`
@@ -20,6 +21,7 @@ export const pageQuery = graphql`
         slug
         title
         subtitle
+        titleimage
       }
     }
     site {
@@ -49,6 +51,11 @@ export default function Template({
   const { frontmatter, htmlAst } = markdownRemark;
   return (
     <Layout location={location}>
+      <SEO
+        title={frontmatter.title}
+        image={frontmatter.titleimage}
+        description={frontmatter.subtitle}
+      />
       <div>
         <div className="post-header-wrapper outer">
           <header className="inner">

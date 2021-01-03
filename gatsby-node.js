@@ -6,7 +6,12 @@
 const MarketReturnsDataHelper = require("./src/helpers/market-returns-data-helper");
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions;
+  const { createRedirect, createPage } = actions;
+  createRedirect({
+    fromPath: "/howMuchIsBuyingThisThingGoingToDelayMyRetirement",
+    toPath: "/financial-independence-down-to-the-second",
+    isPermanent: true,
+  });
 
   const blogPostTemplate = require.resolve(`./src/templates/post-template.js`);
 

@@ -8,7 +8,10 @@ export default function HashTest({
 }) {
   return (
     <Layout location={location}>
-      <SEO title="Home" />
+      <SEO
+        title="Visual Hash Representations"
+        description="Particle effects based on md5 hashes of arbitrary strings"
+      />
       <div className="inner">
         <h1>Visual Hash Representations</h1>
         <p>
