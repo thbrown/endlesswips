@@ -11,7 +11,7 @@ hidden: true
 
 <div className="rant">
 
-#### Grey Box Tangent: Bonus Capital Gains Taxes?
+#### Tangent: Bonus Capital Gains Taxes?
 
 There is a third place where capital gains show up that I've excluded from my numbers.
 

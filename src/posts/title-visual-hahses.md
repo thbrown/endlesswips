@@ -2,14 +2,14 @@
 slug: "/title-visual-hahses"
 title: "Auto Pretty Picture"
 subtitle: "Visual Hashing of Post Titles"
-firstposted: "2017-10-23"
-lastupdated: "2019-08-22"
+firstposted: "2020-10-23"
+lastupdated: "2021-01-22"
 titleimage: "https://live.staticflickr.com/65535/50414927621_d6fceeb114_o.png"
 titleimagetopmargin: -60
 hidden: false
 ---
 
-After loading any post on this site, the first you'll probably notice is that title of the post is backed by a satisfying array of geometric elements slowly drifting around the title box. These are all auto-generated effects based on the title of the post so that I don't have to go find pretty but potentially unrelated pictures to spruce up the page.
+After loading any post on this site, the first thing.you'll probably notice is that title of the post is backed by a satisfying array of geometric elements slowly drifting around the title box. These are all auto-generated effects based on the title of the post so that I don't have to go find pretty but potentially unrelated pictures to spruce up the page.
 
 #### But How?
 

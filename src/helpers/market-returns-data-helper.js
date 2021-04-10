@@ -18,7 +18,7 @@ const EXPENSE_RATIOS = [
 ].sort();
 
 // Data Constants
-const END_DATE = "2020.01";
+const END_DATE = "2021.01";
 const CPI_CURRENT_DATE = "2020.08";
 const TARGET_MONTH = ".01";
 
@@ -27,8 +27,8 @@ const DATE = 0;
 const PRICE = 1;
 const DIVIDEND = 2;
 const CPI = 4;
-const REAL_PRICE = 7;
-const REAL_TOTAL_PRICE = 9;
+const REAL_PRICE = 6;
+const REAL_TOTAL_PRICE = 8;
 
 class MarketReturnsDataHelper {
   // Data URLs
