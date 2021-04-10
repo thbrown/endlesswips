@@ -17,4 +17,4 @@ npm run-script:
 
 e.g. npm run-script develop
 
-./release.sh to move build files and commit them
+`./release.sh` to move build files and commit them

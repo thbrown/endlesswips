@@ -15,7 +15,7 @@ Amaretto Sour
 
 > - 1.5 part Amaretto
 > - 1 part Sweet Mix
-> - 1 part seltzer (or sprite if you want it sweeter)
+> - 1 part seltzer (or Sprite if you want it sweeter)
 > - Ice
 
 Friday night: Amaretto Sour time. We had a bottle of _Di Amore_ Amaretto in a glass bottle we’d used for other drinks and it was running low. We needed some foodstuffs anyway so we stopped by the liquor store on our way back from the grocery. The store had two brands of amaretto available: _Romeo_ for $6.99 and _Disarronno_ for $23.99. “We’re not snooty” I said and we grabbed the cheaper one.

@@ -1,9 +1,9 @@
 ---
 slug: "/aoe2-de-rating-charts"
-title: "The Best Video Game of All Time?"
+title: "The Greatest and Best Video Game in the World?"
 subtitle: "Rating Distribution Charts for Age of Empires 2: DE"
 firstposted: "2020-10-26"
-lastupdated: "2021-01-02"
+lastupdated: "2021-01-03"
 titleimage: "https://live.staticflickr.com/65535/50544759632_83d8c1033b_o.png"
 titleimagetopmargin: -30
 hidden: false
@@ -15,7 +15,7 @@ My favorite video game ever is Age of Empires 2, a real time strategy game which
 
 The game has a lot of depth. When I was younger, I exclusively played the game with cheat codes so I could mass up large army and roll some computer player. Now I see it more of an optimization problem and a battle of decision making. Both ways of playing are fun. You don't have to have to be able to do a million actions per minute to have a good time. My wife and I play together. Everybody seems to get something [different](https://www.reddit.com/r/aoe2/comments/gi57f2/i_like_to_play_sim_city_on_age_of_empires_lol/) out of it and it seems to have a pretty wide demographic.
 
-### AoE:II Where Has This Game Been for the Last Two Decades?
+### Where Has This Game Been for the Last Two Decades?
 
 Microsoft released an expansion to the game in 2000 and the title proved successful. It was my game of choice at LAN parties and every game offered exciting play and a lively post game debriefing session over pizza and soda.
 
@@ -27,7 +27,7 @@ Over time, three additional expansion packs were released for the HD edition: Th
 
 <div className="rant">
 
-#### Grey Box Tangent: The Ugly Expansions
+#### Tangent: The Ugly Expansions
 
 Of the three HD expansions, I only purchased the first one and I was disappointed with it. The game play was fine, but the buildings and art added by the expansion looked... bad.
 
@@ -135,18 +135,74 @@ Here is Hera, one of the game's best players. I got enough stream points on his 
   </iframe>
 </div>
 
+<br>
+
 <div className="rant">
 
-### Grey Box Tangent: Rating vs Elo, ELO?
+### Tangent: Rating vs Elo, ELO?
 
 Elo is a system for determining relative ratings originally used to evaluate chess players. Elo is not an abbreviation (it's often seen written as ELO, I'm assuming this is because of the band) rather it is named after the system's creator. That I can see, none of the official Microsoft sources for Age of Empires 2 ever mention 'Elo'. The number that determines your place on the ladder is always referred to as 'rating' which implies a different implementation. The only place I reference it in my tool is in the description. The idea being that some people will search for the term "ELO" anyways even if it isn't strictly correct.
 
 </div>
 
+### Addendum: Aoe2.net Bookmarklet
+
+I wanted an easy way to see the ratings distribution for any given match listed on Aoe2.net. So I made a bookmarklet.
+
+If you want to use it too, you can click and drag the red bookmarklet link below and add it to your bookmark bar. Then click the bookmarklet while on the aoe2.net "My Match History" page or a player's profile. This will linkify the match title to take you to ratings.aoe2.se. Like so:
+
+![Age Of Empires 2 Screenshot](https://live.staticflickr.com/65535/50937428227_36fb20c789_o.gif)
+
+<div className="rant">
+
+### Tangent: Self XSS
+
+Be careful with bookmarklet links like this! There is a security vulnerability called Self XSS (cross-site scripting). If a user runs a malicious bookmarklet, an attacker can get access to all that user's information on a given site. This can include session information, which may allow the attacker to impersonate the victim on the site (do anything the user could do while logged in). Running a bookmarklet is equivalent to pasting javascript code into your browser's console window and running it.
+
+If you would like to see the source code used to create the bookmarklet link below it's here: https://gist.github.com/thbrown/ded5bf8f7b7cac62ed96dc15bf8e8128
+
+I generated the one below by pasting that code into the bookmarklet generator here: https://codepen.io/myf/pen/lfuHx
+
+</div>
+
+That being said, here is the link:
+
+<div style="display: flex; margin-bottom: 18px;">
+<div style="background-color: #980500;
+    border: 2px solid #111111;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    border-radius: 5px;    
+    width: 190px;
+">
+<a id="lnk" style="color: white" title="Hello" href="javascript:(function(){let isMyMatchesPage = window.location.href.includes( &quot;aoe2de-matches-my-recent-matches&quot; ); let isProfilePage = window.location.href.includes(&quot;profile-&quot;); let COL_INDEX = undefined; let LINK_LOCATION_PREFIX = undefined; let LINK_LOCATION_POSTFIX = undefined; let TABLE = undefined; if (isMyMatchesPage) { COL_INDEX = 3; LINK_LOCATION_PREFIX = &quot;#aoe2de-matches-table > tbody > tr:nth-child(&quot;; LINK_LOCATION_POSTFIX = &quot;) > td:nth-child(1)&quot;; TABLE = &quot;#aoe2de-matches-table&quot;; } else if (isProfilePage) { COL_INDEX = 1; LINK_LOCATION_PREFIX = &quot;#profile-matches-table > tbody > tr:nth-child(&quot;; LINK_LOCATION_POSTFIX = &quot;) > td:nth-child(1) > h5&quot;; TABLE = &quot;#profile-matches-table&quot;; } else { throw new Error( &quot;Unrecognized page, doing nothing...&quot; + isMyMatchesPage + &quot; &quot; + isProfilePage ); } for ( let i = 0; i < document.querySelectorAll(TABLE + &quot; > tbody > tr&quot;).length; i++ ) { let teamOne = []; let teamTwo = []; for ( let j = 0; j < document.querySelectorAll( `${TABLE} > tbody > tr:nth-child(${ i + 1 }) > td:nth-child(${COL_INDEX}) > table > tbody > tr` ).length; j++ ) { let players = document.querySelectorAll( `${TABLE} > tbody > tr:nth-child(${ i + 1 }) > td:nth-child(${COL_INDEX}) > table > tbody > tr:nth-child(${ j + 1 }) > td.player-name` ); let teamOnePlayer = players[0]; let teamTwoPlayer = players[1]; if (teamOnePlayer) { let profileId = teamOnePlayer.innerHTML.split(&quot;'&quot;)[5]; teamOne.push(profileId); } if (teamTwoPlayer) { let profileId = teamTwoPlayer.innerHTML.split(&quot;'&quot;)[5]; teamTwo.push(profileId); } } let link = `https://ratings.aoe2.se/?team_one=${teamOne.join( &quot;-&quot; )}&amp;team_two=${teamTwo.join(&quot;-&quot;)}`; let type = document.querySelector( LINK_LOCATION_PREFIX + (i + 1) + LINK_LOCATION_POSTFIX ); type.innerHTML = `<a title=&quot;&quot; href=&quot;${link}&quot;>${type.innerText}</a>`; (&quot;done&quot;); }})();">Linkify Aoe2.net</a>
+</div>
+<div style="margin-left: 10px;
+    font-style: italic;">
+  <-- Click and drag me to your bookmarks bar (you may have to make the bookmark bar visible using your browser's settings)
+</div>
+</div>
+
+Keep in mind that this is fairly brittle and can break if the aoe2.net UI changes. I will try to keep the bookmarklet up to date with any changes.
+
 ### Next Steps
 
-As far as WIPs go, this one is pretty close to complete. But, of course, there are areas that can be improved:
+As far as WIPs go, this one is n a pretty good state. But, of course, there are areas that can be improved:
 
 1. Performance - Page load times are longer than I'd like. There is also a noticeable delay when selecting a player. The delay is painfully obvious when Hera selects TheViper in the twitch clip above. I've made some improvements since, but I still need to look into webworkers for some processing. Perhaps I can do plot.ly stuff in a webworker w/ some kind of virtual DOM. Maybe move some more processing to build-time without adding too much network overhead.
 
 2. Annotation Layout - I had to write the algorithm that positions the annotations for player names myself and it's not that great. If you add a lot of players you'll see what I mean. This is mostly challenging because of changing screen sizes (e.g. mobile vs desktop).
+
+3. Twitch Extension - I'm working on incorporating this into a Twitch Extension. The idea is that lots of aoe2 streamers put their ratings in the description for their channel, but it's often out of date because they inevitably get better at the game over time. It's also useful for casual viewers to see what skill level the streamer has. In other words, having a rating of "1000" might not mean anything to a lot of people, but a graphic showing the streamer is in the 50th percentile does. Also, I think it might be fun to allow viewers to add their names to the histogram for a small amount of Twitch bits. Will update here as this WIP develops.
+
+### Also See
+
+I have one other, smaller, AoE2:DE project: a helper for playing "Guess the Elo". [Check it out here](/aoe2-guess-the-elo).
+
+### If You Fancy
+
+<buy-me-pizza></buy-me-pizza>

@@ -7,6 +7,8 @@ import ReturnPyramid from "../components/return-pyramid";
 import ParticleEffect from "../components/particles";
 import ReturnHistogram from "../components/return-histogram";
 import LunarLooEntry from "../components/lunar-loo";
+import FootballSquares from "../components/football-squares";
+import BuyMePizza from "../components/buy-me-pizza";
 
 import SEO from "../components/seo";
 import Layout from "../components/layout";
@@ -40,6 +42,8 @@ const renderAst = new rehypeReact({
     "return-histogram": ReturnHistogram,
     "particle-effect": ParticleEffect,
     "lunar-loo-entry": LunarLooEntry,
+    "football-squares": FootballSquares,
+    "buy-me-pizza": BuyMePizza,
   },
 }).Compiler;
 
