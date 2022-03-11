@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /aoe2-de-rating-charts/oauth/
 Disallow: /aoe2-de-rating-charts/admin
+Disallow: /movies
