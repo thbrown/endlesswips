@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-template-js",
+    "path": "/baby-diaper-calc",
+    "result": {"data":{"markdownRemark":{"htmlAst":{"type":"root","children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"I'm a little teapot."}]},{"type":"text","value":"\n"},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"baby-diaper-calc","properties":{},"children":[{"type":"element","tagName":"baby-diaper-calc","properties":{},"children":[]}]}]}],"data":{"quirksMode":false}},"frontmatter":{"firstposted":"February 26, 2022","lastupdated":"February 26, 2022","slug":"/baby-diaper-calc","title":"Baby Diapers","subtitle":"A calculator","titleimage":null}},"site":{"siteMetadata":{"title":"Endless WIPS"}}},"pageContext":{"slug":"/baby-diaper-calc"}},
+    "staticQueryHashes": ["127293879","32046230","3794076007","406918565"]}
