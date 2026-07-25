@@ -1,0 +1,16 @@
+{
+  "name": "Endless WIPS",
+  "short_name": "endlesswips",
+  "start_url": "/",
+  "background_color": "#980500",
+  "theme_color": "#980500",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
