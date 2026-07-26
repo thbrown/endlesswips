@@ -6,4 +6,4 @@
 :HL["https://img.endlesswips.com/50280702967_273a1733b7_z.jpg","image"]
 :HL["https://img.endlesswips.com/50284002243_6fe5001e65_o.png","image"]
 :HL["https://img.endlesswips.com/50276461253_dd0eace964_o.png","image"]
-0:{"buildId":"f4cyIfykJa7GU6UzUQIFc","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"aoe2-de-rating-charts","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"S9sisIIJNoFmVx2HpUNbO","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"aoe2-de-rating-charts","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
